@@ -1,4 +1,4 @@
-Highcharts.getJSON('https://raw.githubusercontent.com/mc265/wood-pulp-export/main/wood%20pulp%20export.json', function (data) {
+Highcharts.getJSON('https://raw.githubusercontent.com/mc265/paper-and-paperboardex/main/paper%20and%20paperboard.json', function (data) {
   
   var formattedData = data.map(function (point) {
     var date = new Date(point[0]);
