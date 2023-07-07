@@ -30,20 +30,25 @@ enabled:false
             text: 'Paper and paperboard export'
         },
     
-      xAxis: {
-            type: 'datetime',
-         labels: {
-              format: '{value:%Y}'
-          
-            }
-         
+           xAxis: {
+            type: 'date ',
+            title: {
+            enabled: true,
+            text: 'Year'
+        }
+       },
+        yAxis: {
+          title:{
+            enabled:true,
+            text: 'tonnes'
+          }
         },
         series: [{
             name: 'Paper and paperboard',
             data: formattedData,
             tooltip: {
                 valueDecimals: 0,
-               valueSuffix: 'tonnees'
+               valueSuffix: 'tonnes'
             }
         }]
     });
